@@ -40,7 +40,7 @@ public function parent()
 #### بعد از برقرار کردن این رابطه ها ما میتونیم که بریم توی کنترلر مد نظر و از اون ها استفاده کنیم
 
 ```
-public function index(Category $category)
+public function getParent(Category $category)
 {
     $category->parent; // گرفتن دسته بندی اصلی برای این زیر دسته بندی خاص
     // or
@@ -49,7 +49,7 @@ public function index(Category $category)
 ```
 
 ```
-public function index(Category $category)
+public function getChilds(Category $category)
 {
     $category->children; // گرفتن همه زیر دسته بندی های این دسته بندی اصلی
     // or
